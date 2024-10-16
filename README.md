@@ -1,6 +1,6 @@
 <h1 align="center">MERN-SECURE-AUTHENTICATION 🔒 </h1>
 
-About This Course:
+About This Project:
 
 -   🔧 Backend Setup
 -   🗄️ Database Setup
