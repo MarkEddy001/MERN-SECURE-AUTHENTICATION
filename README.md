@@ -22,57 +22,48 @@ A robust MERN stack authentication system implementing industry-standard securit
 #### Frontend Architecture
 frontend/
 ├── src/
-    ├── components/            # Reusable UI Components
-    │   ├── Auth/
-    │   │   ├── Login.jsx
-    │   │   ├── Register.jsx
-    │   │   └── ResetPassword.jsx
-    │   └── Common/
-    │       ├── Navbar.jsx
-    │       └── Footer.jsx
-    │
-    ├── pages/                # Application Pages
-    │   ├── HomePage.jsx
-    │   ├── DashboardPage.jsx
-    │   └── ProfilePage.jsx
-    │
-    ├── redux/                # State Management
-    │   ├── store.js
-    │   ├── slices/
-    │   │   ├── authSlice.js
-    │   │   └── userSlice.js
-    │   └── actions/
-    │
-    ├── utils/                # Helper Functions
-    │   ├── authUtils.js
-    │   ├── validators.js
-    │   └── apiService.js
-    │
-    └── App.js                # Root Component
+│   ├── components/            # Reusable UI Components
+│   │   ├── Auth/
+│   │   │   ├── Login.jsx
+│   │   │   ├── Register.jsx
+│   │   │   └── ResetPassword.jsx
+│   │   └── Common/
+│   │       ├── Navbar.jsx
+│   │       └── Footer.jsx
+│   ├── pages/                # Application Pages
+│   │   ├── HomePage.jsx
+│   │   ├── DashboardPage.jsx
+│   │   └── ProfilePage.jsx
+│   ├── redux/                # State Management
+│   │   ├── store.js
+│   │   ├── slices/
+│   │   │   ├── authSlice.js
+│   │   │   └── userSlice.js
+│   └── actions/
+│   ├── utils/                # Helper Functions
+│   │   ├── authUtils.js
+│   │   ├── validators.js
+│   │   └── apiService.js
+│   └── App.js                # Root Component
 
 #### Backend Architecture
 backend/
 ├── controllers/              # Request Handlers
 │   ├── authController.js
 │   └── userController.js
-│
 ├── middleware/              # Custom Middleware
 │   ├── authMiddleware.js
 │   ├── validator.js
 │   └── errorHandler.js
-│
 ├── models/                  # Database Schemas
 │   ├── userModel.js
 │   └── tokenModel.js
-│
 ├── routes/                  # API Routes
 │   ├── authRoutes.js
 │   └── userRoutes.js
-│
 ├── config/                  # Configuration
 │   ├── database.js
 │   └── mailer.js
-│
 └── server.js               # Entry Point
 
 
