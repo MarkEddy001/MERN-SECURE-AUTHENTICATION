@@ -16,12 +16,10 @@ A robust MERN stack authentication system implementing industry-standard securit
 - JWT: Authentication tokens
 - Bcrypt: Password hashing
 
-
 ### 📂 Project Structure
 
 #### Frontend Architecture
-  
-  - **src/**
+ - **src/**
     - **components/** 🌐 _Reusable UI Components_
       - **Auth/**
         - `Login.jsx`
@@ -45,11 +43,8 @@ A robust MERN stack authentication system implementing industry-standard securit
       - `validators.js`
       - `apiService.js`
     - `App.js` 📌 _Root Component_
-</details>
 
 #### Backend Architecture
-<details>
-<summary><strong>backend/</strong></summary>
   
   - **controllers/** 🎛️ _Request Handlers_
     - `authController.js`
@@ -107,7 +102,6 @@ User {
     createdAt: Date
 }
 ```
-
 About This Project:
 🔧 Backend Setup
 🗄️ Database Setup
@@ -131,10 +125,10 @@ About This Project:
 🏠 Dashboard Page
 🔄 Implementing Forgot Password
 🚀 Super Detailed Deployment
+✅ This is a lot of work. Support my work by subscribing to the Channel
 
 🚀 Setup Instructions
 Environment Variables (.env)
-
 MONGO_URI=your_mongo_uri
 PORT=5000
 JWT_SECRET=your_secret_key
@@ -144,7 +138,6 @@ MAILTRAP_ENDPOINT=https://send.api.mailtrap.io/
 CLIENT_URL= http://localhost:5173
 
 Installation
-
 # Build the app
 npm run build
 
