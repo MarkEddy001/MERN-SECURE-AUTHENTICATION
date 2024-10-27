@@ -16,54 +16,64 @@ A robust MERN stack authentication system implementing industry-standard securit
 - JWT: Authentication tokens
 - Bcrypt: Password hashing
 
-📁 frontend/
-    📁 src/
-        📁 components/            # UI Components
-            📄 Login.jsx
-            📄 Register.jsx
-            📄 ResetPassword.jsx
-            📄 VerifyEmail.jsx
-            📄 Dashboard.jsx
-        
-        📁 pages/                # Main Pages
-            📄 Home.jsx
-            📄 AuthPages.jsx
-            📄 ProtectedPages.jsx
-        
-        📁 redux/                # State Management
-            📄 store.js
-            📄 authSlice.js
-            📄 userSlice.js
-        
-        📁 utils/                # Helper Functions
-            📄 authUtils.js
-            📄 validation.js
-            📄 apiCalls.js
-        
-        📄 App.js                # Main Component
-📁 backend/
-    📁 controllers/              # Request Handlers
-        📄 authController.js
-        📄 userController.js
-    
-    📁 middleware/              # Custom Middleware
-        📄 auth.js
-        📄 validator.js
-        📄 errorHandler.js
-    
-    📁 models/                 # Database Schemas
-        📄 User.js
-        📄 Token.js
-    
-    📁 routes/                # API Routes
-        📄 authRoutes.js
-        📄 userRoutes.js
-    
-    📁 config/               # Configuration
-        📄 db.js
-        📄 email.js
-    
-    📄 server.js            # Entry Point
+
+### 📂 Project Structure
+
+#### Frontend Architecture
+frontend/
+├── src/
+    ├── components/            # Reusable UI Components
+    │   ├── Auth/
+    │   │   ├── Login.jsx
+    │   │   ├── Register.jsx
+    │   │   └── ResetPassword.jsx
+    │   └── Common/
+    │       ├── Navbar.jsx
+    │       └── Footer.jsx
+    │
+    ├── pages/                # Application Pages
+    │   ├── HomePage.jsx
+    │   ├── DashboardPage.jsx
+    │   └── ProfilePage.jsx
+    │
+    ├── redux/                # State Management
+    │   ├── store.js
+    │   ├── slices/
+    │   │   ├── authSlice.js
+    │   │   └── userSlice.js
+    │   └── actions/
+    │
+    ├── utils/                # Helper Functions
+    │   ├── authUtils.js
+    │   ├── validators.js
+    │   └── apiService.js
+    │
+    └── App.js                # Root Component
+
+#### Backend Architecture
+backend/
+├── controllers/              # Request Handlers
+│   ├── authController.js
+│   └── userController.js
+│
+├── middleware/              # Custom Middleware
+│   ├── authMiddleware.js
+│   ├── validator.js
+│   └── errorHandler.js
+│
+├── models/                  # Database Schemas
+│   ├── userModel.js
+│   └── tokenModel.js
+│
+├── routes/                  # API Routes
+│   ├── authRoutes.js
+│   └── userRoutes.js
+│
+├── config/                  # Configuration
+│   ├── database.js
+│   └── mailer.js
+│
+└── server.js               # Entry Point
 
 
 ### 🔑 Key Features
