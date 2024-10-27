@@ -16,26 +16,54 @@ A robust MERN stack authentication system implementing industry-standard securit
 - JWT: Authentication tokens
 - Bcrypt: Password hashing
 
-### 📂 Project Structure
-
-Frontend Structure
-
-frontend/
-src/
-components/                # UI Components
-pages/                    # Main Pages
-redux/                    # State Management
-utils/                    # Helper Functions
-App.js                    # Main Component
-
-Backend Structure
-
-backend/
-controllers/              # Request Handlers
-middleware/               # Custom Middleware
-models/                   # Database Schemas
-routes/                   # API Routes
-server.js                # Entry Point
+📁 frontend/
+    📁 src/
+        📁 components/            # UI Components
+            📄 Login.jsx
+            📄 Register.jsx
+            📄 ResetPassword.jsx
+            📄 VerifyEmail.jsx
+            📄 Dashboard.jsx
+        
+        📁 pages/                # Main Pages
+            📄 Home.jsx
+            📄 AuthPages.jsx
+            📄 ProtectedPages.jsx
+        
+        📁 redux/                # State Management
+            📄 store.js
+            📄 authSlice.js
+            📄 userSlice.js
+        
+        📁 utils/                # Helper Functions
+            📄 authUtils.js
+            📄 validation.js
+            📄 apiCalls.js
+        
+        📄 App.js                # Main Component
+📁 backend/
+    📁 controllers/              # Request Handlers
+        📄 authController.js
+        📄 userController.js
+    
+    📁 middleware/              # Custom Middleware
+        📄 auth.js
+        📄 validator.js
+        📄 errorHandler.js
+    
+    📁 models/                 # Database Schemas
+        📄 User.js
+        📄 Token.js
+    
+    📁 routes/                # API Routes
+        📄 authRoutes.js
+        📄 userRoutes.js
+    
+    📁 config/               # Configuration
+        📄 db.js
+        📄 email.js
+    
+    📄 server.js            # Entry Point
 
 
 ### 🔑 Key Features
