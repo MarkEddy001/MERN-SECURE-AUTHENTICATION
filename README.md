@@ -20,8 +20,6 @@ A robust MERN stack authentication system implementing industry-standard securit
 ### 📂 Project Structure
 
 #### Frontend Architecture
-<details>
-<summary><strong>frontend/</strong></summary>
   
   - **src/**
     - **components/** 🌐 _Reusable UI Components_
