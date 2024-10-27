@@ -18,48 +18,24 @@ A robust MERN stack authentication system implementing industry-standard securit
 
 ### 📂 Project Structure
 
-### Frontend Structure
+Frontend Structure
 
 frontend/
 src/
-    components/              # UI Components
-        Auth/
-            Login.js
-            Register.js
-            Reset.js
-        Common/
-    pages/                  # Main Pages
-        Dashboard.js
-        Home.js
-        Profile.js
-    redux/                  # State Management
-        actions/
-        reducers/
-        store.js
-    utils/                  # Helper Functions
-        auth.js
-        validation.js
-    App.js                  # Main Component
+components/                # UI Components
+pages/                    # Main Pages
+redux/                    # State Management
+utils/                    # Helper Functions
+App.js                    # Main Component
 
-### Backend Structure
+Backend Structure
 
 backend/
-    controllers/            # Request Handlers
-        authController.js
-        userController.js
-    middleware/            # Custom Middleware
-        auth.js
-        validate.js
-        errorHandler.js
-    models/               # Database Schemas
-        User.js
-        Token.js
-    routes/              # API Routes
-        auth.js
-        user.js
-    config/             # Configuration
-        db.js
-    server.js          # Entry Point
+controllers/              # Request Handlers
+middleware/               # Custom Middleware
+models/                   # Database Schemas
+routes/                   # API Routes
+server.js                # Entry Point
 
 
 ### 🔑 Key Features
